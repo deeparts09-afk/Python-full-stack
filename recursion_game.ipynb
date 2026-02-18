@@ -1,0 +1,13 @@
+import random
+def guess(num):
+    user=int(input("Enter Your Choice ?:"))
+    if(user==num):
+        print("you guessed it right 🎉")
+    elif(user<num):
+        print("Try a Big Number 🔺")
+        guess(num)
+    else:
+        print("Try a Small Number 🔻")
+        guess(num)
+value=random.randint(1,100)
+guess(value)
